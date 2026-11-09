@@ -4,7 +4,11 @@ Herramienta en **Python** que genera automáticamente el **diseño CAD paramétr
 
 El programa sintetiza el mecanismo, calcula las cargas según la norma **ISO 10328**, dimensiona los eslabones y pasadores, y actualiza un ensamblaje de **Autodesk Inventor** mediante su API. Un proceso de diseño que tomaba alrededor de **3 meses** se reduce a unos **30 minutos**.
 
-> Proyecto de titulación de Ingeniería Mecánica — Universidad San Francisco de Quito (USFQ), 2025. Desarrollado en equipo como parte de la tesis *Desarrollo de Prótesis de Rodilla Policéntrica con Nivel de Movilidad K3*.
+> Proyecto de titulación de Ingeniería Mecánica — Universidad San Francisco de Quito (USFQ), 2025. Desarrollado en equipo como parte de la tesis [*Desarrollo de Prótesis de Rodilla Policéntrica con Nivel de Movilidad K3*](https://usfq.primo.exlibrisgroup.com/discovery/delivery/593USFQ_INST:USFQ/12101052760006366).
+
+<p align="center">
+  <img src="docs/images/knee-prosthesis.jpg" alt="Prototipo de la prótesis de rodilla ensamblado" width="420">
+</p>
 
 ---
 
@@ -37,6 +41,14 @@ results/<nombre>/   →  ensamblaje .iam + piezas .ipt listos
 ```
 
 Todo el flujo se orquesta en `knee_designer/knee_pipeline.py` y se puede usar desde una **interfaz gráfica** (`ui/interface.py`, Tkinter + Matplotlib) donde el usuario ajusta la curva ICR y genera el diseño.
+
+## Galería
+
+| Trayectorias ICR sintetizadas vs. objetivo | Modelo CAD optimizado |
+|---|---|
+| <img src="docs/images/knee-icr.jpg" width="380"> | <img src="docs/images/knee-cad.jpg" width="380"> |
+| **Barra CD: original vs. optimizada (von Mises, ANSYS)** | **Ensamble general del mecanismo** |
+| <img src="docs/images/knee-fea.jpg" width="380"> | <img src="docs/images/knee-exploded.jpg" width="380"> |
 
 ## Estructura del repositorio
 
@@ -77,6 +89,10 @@ Los diseños generados se guardan en `results/<nombre_del_diseño>/`. El ensambl
 - Validación estructural estática y de fatiga según **ISO 10328** con análisis por elementos finitos.
 - Optimización topológica con **7.8 %** de reducción de masa sin comprometer la resistencia.
 - Evaluación biomecánica con captura de movimiento **Vicon**: **4.9 %** de error frente a una prótesis comercial de referencia.
+
+## Documentación
+
+La tesis completa está disponible en el [repositorio institucional de la USFQ](https://usfq.primo.exlibrisgroup.com/discovery/delivery/593USFQ_INST:USFQ/12101052760006366).
 
 ## Tecnologías
 
