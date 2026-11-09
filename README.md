@@ -42,6 +42,20 @@ results/<nombre>/   →  ensamblaje .iam + piezas .ipt listos
 
 Todo el flujo se orquesta en `knee_designer/knee_pipeline.py` y se puede usar desde una **interfaz gráfica** (`ui/interface.py`, Tkinter + Matplotlib) donde el usuario ajusta la curva ICR y genera el diseño.
 
+## Interfaz
+
+El usuario ajusta tres parámetros clínicos (**estabilidad**, **movilidad** y **curvatura** de la trayectoria ICR) y la herramienta genera el diseño completo.
+
+<p align="center">
+  <img src="docs/images/knee-gui.jpg" alt="Interfaz gráfica para el ajuste de parámetros clínicos" width="760">
+</p>
+
+Diseños CAD generados automáticamente para distintas configuraciones: (a) E50–M50–C50, (b) E22–M33–C12, (c) E93–M96–C51.
+
+<p align="center">
+  <img src="docs/images/knee-configs.jpg" alt="Modelos CAD generados para diferentes parámetros clínicos" width="620">
+</p>
+
 ## Galería
 
 | Trayectorias ICR sintetizadas vs. objetivo | Modelo CAD optimizado |
