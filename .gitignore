@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.env
+
+# Autodesk Inventor
+OldVersions/
+*.lck
+*.bak
+
+# Resultados generados (solo se versiona el ejemplo incluido)
+results/*
+!results/knee_gui_E50_M50_C50/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
